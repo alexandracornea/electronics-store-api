@@ -29,4 +29,7 @@ public class Product {
 
     @NotNull
     private boolean deleted;
+
+    @NotNull
+    private Double price;
 }
