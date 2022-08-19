@@ -32,4 +32,12 @@ public class Product {
 
     @NotNull
     private Double price;
+
+    public Product(Type type, String name, Integer stock, boolean deleted, Double price) {
+        this.type = type;
+        this.name = name;
+        this.stock = stock;
+        this.deleted = deleted;
+        this.price = price;
+    }
 }

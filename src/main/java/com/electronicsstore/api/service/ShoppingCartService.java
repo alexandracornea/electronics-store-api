@@ -12,8 +12,8 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class ShoppingCartService {
-    private final ShoppingCartRepository shoppingCartRepository;
-    private final ProductRepository productRepository;
+    private ShoppingCartRepository shoppingCartRepository;
+    private ProductRepository productRepository;
 
     public ShoppingCart createShoppingCart() {
         return shoppingCartRepository.save(new ShoppingCart());

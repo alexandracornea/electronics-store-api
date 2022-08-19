@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
-    private final ProductRepository productRepository;
+    private ProductRepository productRepository;
 
     public Product addNewProduct(Product product) {
         return productRepository.save(product);
